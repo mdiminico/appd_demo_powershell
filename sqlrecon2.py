@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 config = {
 	'user': 'dbuser',
 	'password': 'Goldilocks!23',
-	'host': '10.173.119.183',
+	'host': '10.0.10.211',
 	'database': 'cords',
 	'raise_on_warnings': True,
 }
@@ -33,11 +33,3 @@ else:
 	cursor.close()
 	cnx.close()
 
-
-'''
-output
-
-	('1', 'Tom Corn', 'questionsplease@vmware.com', '(321)645-789')
-	('2', 'Chris Corde', 'faq@vmware.com', '(321)456-987')
-	('3', 'Vijay Ganti', 'anythingplease@vmware.com', '(312)465-879')
-'''
