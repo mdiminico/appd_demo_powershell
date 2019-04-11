@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 config = {
 	'user': 'dbuser',
 	'password': 'Goldilocks!23',
-	'host': '10.173.119.183',
+	'host': '10.0.10.211',
 	'database': 'cords',
 	'raise_on_warnings': True,
 }
