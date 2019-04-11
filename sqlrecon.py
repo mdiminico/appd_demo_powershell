@@ -23,9 +23,9 @@ try:
 	
 	for table in cursor:
 		print("Table - {}".format(table))
-
-    	print("---------------------")
-
+	
+	print("==================================")
+	
 	query = ("select * from customers")
 	
 	cursor.execute(query)
